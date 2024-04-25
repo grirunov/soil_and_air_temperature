@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt("data/soil_average.csv", delimiter=",")
+filename = input("Enter the file name: example (data/soil_average.csv): ")
+data = np.loadtxt(filename, delimiter=",")
 heights = (25, 117, 535, 1070, 1665)
 labels_a = ("Sam-Zug", "Zug-Tqi", "Tqi-Pas", "Pas-Bak")
 xpoints = np.linspace(1, 13, num=13)
