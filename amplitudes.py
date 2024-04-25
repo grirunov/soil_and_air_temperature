@@ -1,6 +1,7 @@
 import numpy as np
 
-data = np.loadtxt("data/soil_average.csv", delimiter=",")
+filename = input("Enter the file name: example (data/soil_average.csv): ")
+data = np.loadtxt(filename, delimiter=",")
 heights = (25, 117, 535, 1070, 1665)
 for i in range(data.shape[0]):
     c = np.zeros(4)
